@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-int decimalToBinary(int n) {
-    int binary = 0, multiplier = 1;
-    int isNegative = n < 0;
+int dec2bin(int n) {
+    int binary = 0, tracker = 1;
+    int neg = n < 0;
 
-    if (isNegative) {
+    if (neg) {
         n = -n;
     }
 
     while (n > 0) {
-        binary += (n % 2) * multiplier;
+        binary += (n % 2) * tracker;
         n /= 2;
-        multiplier *= 10;
+        tracker *= 10;
     }
 
-    if (isNegative) {
+    if (neg) {
         int inverted = ~binary;
         binary = inverted + 1;
     }
@@ -23,14 +23,14 @@ int decimalToBinary(int n) {
 }
 
 int main() {
-    int decimalNum, binaryNum;
+    int dec, bin;
 
     printf("Enter a decimal number: ");
-    scanf("%d", &decimalNum);
+    scanf("%d", &dec);
 
-    binaryNum = decimalToBinary(decimalNum);
+    bin = dec2bin(dec);
 
-    printf("Binary equivalent: %d\n", binaryNum);
+    printf("The binary equivalent: %d\n", bin);
 
     return 0;
 }
