@@ -12,7 +12,7 @@ This C program converts a decimal number entered by the user into its binary equ
 
      ```bash
      git clone https://github.com/akumathedyn123/c-dec2bin-decimal-to-binary.git
-     ```
+     ``` 
 
    This will create a new directory named `c-dec2bin-decimal-to-binary` in your current location.
 
