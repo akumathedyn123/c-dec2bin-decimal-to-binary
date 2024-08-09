@@ -1,4 +1,4 @@
-# c-dec2bin-decimal-to-binary: Decimal to Binary Conversion
+# c-dec2bin-decimal-to-binary: Decimal to Binary Conversion 
 
 This C program converts a decimal number entered by the user into its binary equivalent.
 
